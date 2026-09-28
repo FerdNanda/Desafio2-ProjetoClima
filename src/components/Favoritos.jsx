@@ -4,10 +4,10 @@ function Favoritos({ favoritos, onSelecionar, onRemover }) {
   }
 
   return (
-    <div>
+    <div className="Favoritos">
       <h3>Favoritos</h3>
       {favoritos.map((nome) => (
-        <div key={nome}>
+        <div key={nome} className="favorito">
           <button onClick={() => onSelecionar(nome)}>{nome}</button>
           <button onClick={() => onRemover(nome)}>Remover</button>
         </div>

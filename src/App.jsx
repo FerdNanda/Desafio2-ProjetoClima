@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import axios from "axios";
+import "./App.css";
 
 import SearchBar from "./components/SearchBar";
 import CardsClima from "./components/cardsClima";
@@ -91,7 +92,7 @@ function App() {
   }
 
   return (
-    <div>
+    <div className="app">
       <h1>Previsão do Tempo</h1>
 
       <SearchBar cidade={cidade} setCidade={setCidade} onBuscar={buscar} />

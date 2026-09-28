@@ -3,7 +3,7 @@ function ForecastItem({ data, max, min, chuva }) {
   const [year, month, day] = data.split("-");
 
   return (
-    <div>
+    <div className="forecast-item">
       <p>{day}/{month}/{year}</p>
       <p>Máxima: {max} °C</p>
       <p>Mínima: {min} °C</p>

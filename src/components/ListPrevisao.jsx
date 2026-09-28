@@ -2,7 +2,7 @@ import ForecastItem from "./ForecastItem";
 
 function ListPrevisao({ diario }) {
   return (
-    <div>
+    <div className="ListPrevisao">
       <h3>Próximos dias</h3>
       {diario.time.map((dia, i) => (
         <ForecastItem
